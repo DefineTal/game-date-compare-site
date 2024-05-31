@@ -6,12 +6,12 @@ export default function MovieCard() {
   const getMovie = useMovieDispatch();
 
   return (
-    <section>
-      <img src={movie.posterPath} alt="Movie Poster"/>
-      <h1>{movie.title}</h1>
+    <section class="movie-card">
+      <img class="movie-image" src={movie.posterPath} alt="Movie Poster"/>
+      <h2>{movie.title}</h2>
       <p>Release Date: {movie.releaseDate}</p>
-      <button onClick={getMovie}>
-        Get a random movie
+      <button class="give-up" onClick={getMovie}>
+        Give up
       </button>
     </section>
   );
