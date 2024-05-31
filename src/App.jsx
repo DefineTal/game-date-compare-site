@@ -1,9 +1,13 @@
-import GameCard from "./components/MovieCard";
+import MovieCard from "./components/MovieCard";
+import { MovieProvider } from "./contexts/movieContext";
+
 
 function App() {
   return (
     <div className="App">
-      <GameCard/>
+      <MovieProvider>
+        <MovieCard/>
+      </MovieProvider>
     </div>
   );
 }

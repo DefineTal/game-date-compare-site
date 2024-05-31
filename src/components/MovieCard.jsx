@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function Movie() {
+export default function MovieCard() {
   const [movie, setMovie] = useState({ title: "", releaseDate: "", posterPath: ""});
   let randomList = Math.floor(Math.random() * 50);
   const fetch = require('node-fetch');
