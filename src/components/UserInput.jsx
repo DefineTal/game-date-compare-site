@@ -17,6 +17,7 @@ export default function UserInput() {
         console.log(`You got it wrong! Current movie release date = ${currentMovieReleaseDate}. User input = ${userInput}`);
     }
     getMovie();
+    setUserInput('');
     };
 
     const handleKeyDown = (e) => {
