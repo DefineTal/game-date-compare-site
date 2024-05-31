@@ -1,4 +1,4 @@
-import { useMovieDataContext, useMovieDispatch } from "../contexts/movieContext";
+import { useMovieDataContext } from "../contexts/movieContext";
 
 
 export default function MovieCard() {
