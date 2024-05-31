@@ -1,9 +1,11 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-
+// creates context with
 export const movieDataContext = createContext(null);
 export const movieDispatchContext = createContext(null);
 
+
+// allows use of the variable throughout the project
 export function useMovieDataContext(){
 	return useContext(movieDataContext);
 }
@@ -13,15 +15,17 @@ export function useMovieDispatch(){
 }
 
 export function MovieProvider({children}){
-
+    // state for the global variable
     const [movie, setMovie] = useState({ title: "", releaseDate: "", posterPath: "" });
-
+    // gets movie from api
     const getMovie = async () => {
         try {
             let randomList = Math.floor(Math.random() * 50);
 
             const fetch = require('node-fetch');
+            // pick page random from 1 to 50 of top movies
             const url = 'https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=' + randomList;
+            // allows me access to api using correct method and bearer token
             const options = {
               method: 'GET',
               headers: {
@@ -35,7 +39,7 @@ export function MovieProvider({children}){
             const json = await response.json();
             console.log(json);
           
-
+            // chooses random movie from page with associated values    
             setMovie({
                 title: json.results[randomNum].title,
                 releaseDate: json.results[randomNum].release_date,

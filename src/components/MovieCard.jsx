@@ -2,6 +2,7 @@ import { useMovieDataContext, useMovieDispatch } from "../contexts/movieContext"
 
 
 export default function MovieCard() {
+  // uses movie context from parent
   const movie = useMovieDataContext();
   const getMovie = useMovieDispatch();
 

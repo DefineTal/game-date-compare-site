@@ -85,21 +85,20 @@ header h1 {
   max-width: 350px;
   text-align: center;
   margin-right: 20px;
-}
 
-.movie-image {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.give-up {
-  padding: 10px 20px;
-  background-color: #61dafb;
-  border-radius: 4px;
-  color: white;
-  font-size: 1em;
-  transition: background-color 0.3s;
+    .movie-image {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .give-up {
+      padding: 10px 20px;
+      background-color: #61dafb;
+      border-radius: 4px;
+      color: white;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
 }
 
 .give-up:hover {
