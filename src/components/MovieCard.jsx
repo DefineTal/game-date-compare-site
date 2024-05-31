@@ -9,7 +9,7 @@ export default function MovieCard() {
   return (
     <section className="movie-card">
       <img className="movie-image" src={movie.posterPath} alt="Movie Poster"/>
-      <h2>{movie.title}</h2>
+      <h2 className="movie-title">{movie.title}</h2>
       {/* <p>Release Date: {movie.releaseDate}</p> */}
       {/* <button className="give-up" onClick={getMovie}>
         Give up
