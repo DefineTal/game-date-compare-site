@@ -35,6 +35,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 2em;
+  font-weight: 900;
 }
 
 .body-container {
@@ -96,19 +97,19 @@ header h1 {
       border-radius: 8px;
       margin-bottom: 20px;
     }
-    .give-up {
+    /* .give-up {
       padding: 10px 20px;
       background-color: #61dafb;
       border-radius: 4px;
       color: white;
       font-size: 1em;
       transition: background-color 0.3s;
-    }
+    } */
 }
 
-.give-up:hover {
+/* .give-up:hover {
   background-color: #21a1f1;
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
