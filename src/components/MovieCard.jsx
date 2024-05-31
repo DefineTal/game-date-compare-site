@@ -4,7 +4,7 @@ import { useMovieDataContext, useMovieDispatch } from "../contexts/movieContext"
 export default function MovieCard() {
   // uses movie context from parent
   const movie = useMovieDataContext();
-  const getMovie = useMovieDispatch();
+  // const getMovie = useMovieDispatch();
 
   return (
     <section className="movie-card">
