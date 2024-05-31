@@ -11,9 +11,9 @@ export default function MovieCard() {
       <img className="movie-image" src={movie.posterPath} alt="Movie Poster"/>
       <h2>{movie.title}</h2>
       {/* <p>Release Date: {movie.releaseDate}</p> */}
-      <button className="give-up" onClick={getMovie}>
+      {/* <button className="give-up" onClick={getMovie}>
         Give up
-      </button>
+      </button> */}
     </section>
   );
 }
